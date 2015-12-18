@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/utitle"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#262B4D"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/baback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:src="@drawable/btn_actionbar_back" />
+
+        <TextView
+            android:id="@+id/banametv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="关注的吧"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/baimgxie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/icon_more_n" />
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/balistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+        
+    </ListView>
+
+</LinearLayout>

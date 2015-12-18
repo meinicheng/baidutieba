@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_ai_item"
+    
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp" >
+    <ImageView
+        android:id="@+id/user_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_content_card"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/TextTheme"
+        android:layout_alignTop="@id/user_logo"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/user_logo"
+        android:padding="2dp"
+        android:text="岁月抚伤"
+        android:textColor="#505254"
+        android:textSize="12sp" />
+    <TextView 
+	    android:id="@+id/user_size"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_alignTop="@id/user_name"
+	    android:text=" 16"
+	    android:layout_marginTop="2dp"
+	    android:layout_marginRight="5dp"
+	    android:gravity="right"
+	    android:layout_alignParentRight="true"
+	    android:textColor="#A7A9AB"
+	    android:textSize="12sp" 
+	    android:drawableLeft="@drawable/icon_rec_comment_n"
+	    />
+	
+    <TextView
+        android:id="@+id/user_time"
+        style="@style/TextTheme"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/user_logo"
+        android:padding="2dp"
+        android:text="2015-09-16 18:54:16"
+        android:textColor="#A7A9AB"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/TextTheme"
+        android:layout_below="@id/user_logo"
+        android:maxLines="2"
+        android:layout_marginTop="8dp"
+        android:text="十年之前"
+         android:lineSpacingExtra="2dp"
+        android:textScaleX="1.05"
+        android:textColor="#0A0A0A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/content_text"
+        style="@style/TextTheme"
+        android:layout_below="@id/title_text"
+        android:maxLines="4"
+        android:layout_marginTop="8dp"
+        android:textScaleX="1.05"
+        android:lineSpacingExtra="5dp"
+        android:text="十年之前，我不认识你 你不属于我，我们还是一样，陪在一个陌生人左右，走过渐渐熟悉的街头;十年之后，我们是朋友， 还可以问候，只是那种温柔，再也找不到拥抱的理由，情人最后难免沦为朋友。"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp" />
+	
+    <ImageView
+        android:id="@+id/content_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/content_text"
+        android:src="@drawable/ic_launcher"
+        />
+    
+</RelativeLayout>

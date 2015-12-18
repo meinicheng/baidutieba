@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_ai_item"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp" >
+    <ImageView
+        android:id="@+id/zhuti_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_content_card"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/zhuti_name"
+        style="@style/TextTheme"
+        android:layout_alignTop="@id/zhuti_logo"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/zhuti_logo"
+        android:padding="2dp"
+        android:text="岁月抚伤"
+        android:textColor="#505254"
+        android:textSize="10sp" />
+    <TextView 
+	    android:id="@+id/zhuti_size"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=" 16"
+	    android:gravity="right"
+	    android:layout_alignParentRight="true"
+	    android:textColor="#3385FF"
+	    android:layout_alignTop="@+id/zhutibaname"
+	    android:padding="5dp"
+	    android:textSize="10sp" 
+	    android:drawableLeft="@drawable/icon_comment_s"
+	    />
+	
+    <TextView
+        android:id="@+id/zhuti_time"
+        style="@style/TextTheme"
+        android:layout_below="@id/zhuti_name"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/zhuti_logo"
+        android:padding="2dp"
+        android:text="2015-09-16 18:54:16"
+        android:textColor="#A7A9AB"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/title_zhuti"
+        style="@style/TextTheme"
+        android:layout_below="@id/zhuti_logo"
+        android:maxLines="2"
+        android:layout_marginTop="8dp"
+        android:text="十年之前"
+         android:lineSpacingExtra="2dp"
+        android:textScaleX="1.05"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/content_zhuti"
+        style="@style/TextTheme"
+        android:layout_below="@+id/zhuti_image"
+        android:maxLines="4"
+        android:layout_marginTop="8dp"
+        android:textScaleX="1.05"
+        android:lineSpacingExtra="5dp"
+        android:text="十年之前，我不认识你 你不属于我，我们还是一样，陪在一个陌生人左右，走过渐渐熟悉的街头;十年之后，我们是朋友， 还可以问候，只是那种温柔，再也找不到拥抱的理由，情人最后难免沦为朋友。"
+        android:textColor="#0A0A0A"
+        android:textSize="13sp" />
+	
+    <ImageView
+        android:id="@+id/zhuti_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/title_zhuti"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_launcher"
+        />
+    <View 
+        android:id="@+id/zhutiview"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:attr/listDivider" 
+        android:layout_below="@id/content_zhuti"
+        android:layout_marginTop="8dp"
+        />
+    <TextView 
+        android:id="@+id/zhutibaname"
+        android:layout_below="@+id/zhutiview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="九江职业技术学院"
+        android:textColor="#A7A9AB"
+        android:textSize="13sp"
+        />
+    
+</RelativeLayout>

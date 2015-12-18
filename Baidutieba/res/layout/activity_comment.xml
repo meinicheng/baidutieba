@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#262B4D"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/cback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:src="@drawable/btn_actionbar_back" />
+
+        <TextView
+            android:id="@+id/cnametv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:ellipsize="end"
+       	 	android:singleLine="true"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/cimgxie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_more_n"
+            android:layout_marginRight="9dp"
+            />
+        
+    </LinearLayout>
+    <ProgressBar 
+        android:id="@+id/probtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/clist" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ctitle"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+    </ListView>
+    
+    <LinearLayout 
+        android:id="@+id/pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#C1FFFFFF"
+        android:orientation="vertical"
+        >
+       <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/base_horizontal_line"
+            />
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="47dp"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           >
+           <EditText
+                android:id="@+id/commentedit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="39dp"
+                android:hint="写下你的评论..."
+                android:background="@drawable/base_edit_input"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:textColor="#ABAEB2"
+                android:layout_marginLeft="12dp"
+                android:textSize="16sp" />
+           <Button 
+               android:id="@+id/commentbtn"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="39dp"
+               android:text="发表"
+               android:layout_marginRight="7dp"
+               android:background="@drawable/base_edit_input"
+               android:layout_gravity="center_vertical"
+               />
+           
+       </LinearLayout>
+       
+    </LinearLayout>
+    
+
+</RelativeLayout>

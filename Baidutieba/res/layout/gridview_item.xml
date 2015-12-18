@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@drawable/btn_mygridview"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/gv_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/gv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_grade_lv18" />
+
+    <ImageView
+        android:id="@+id/gv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        
+        android:src="@drawable/icon_unfold_add" />
+
+</LinearLayout>

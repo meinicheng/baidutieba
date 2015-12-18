@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+     >
+
+    <LinearLayout
+        android:id="@+id/layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frame_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_msg_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/icon_chat_dot" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_settings"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/icon_new_friend" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_new_name"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="新的好友"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_below="@id/layout_new"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout_near"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_settings"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_add_friend" />
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="查找好友"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_below="@id/layout_near"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout_nearb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/li"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_settings"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_me_group" />
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="附近的人"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

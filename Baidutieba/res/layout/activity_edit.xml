@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#262B4D"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/eback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:src="@drawable/btn_actionbar_back" />
+
+        <TextView
+            android:id="@+id/enametv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="发表主题"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/eimgxie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/icon_pop_edit" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar"
+        android:hint=" 标题"
+        android:textSize="16sp"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:padding="7dp"
+         />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/sstitle"
+        android:background="@drawable/base_horizontal_line" />
+
+    <EditText
+        android:padding="7dp"
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:gravity="left|top"
+        android:textSize="16sp"
+        android:hint=" 内容"
+        android:inputType="textMultiLine"
+        android:background="@null"
+        android:minLines="8"
+        >
+		
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/pic_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bb_edit_loding_button"
+        android:paddingTop="8dp" >
+
+        <View
+            android:id="@+id/view_helper"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="#00000000" />
+
+        <LinearLayout
+            android:id="@+id/open_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/view_helper"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/open_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/open_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/open_pic_tips"
+                style="@style/TextTheme.tipstheme_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="添加图片" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/take_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/view_helper"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/take_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/take_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/take_pic_tips"
+                style="@style/TextTheme.tipstheme_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="拍照添加" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

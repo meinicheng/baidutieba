@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/hlcomment_logo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_content_card"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/hlcomment_name"
+        style="@style/TextTheme"
+        android:layout_alignTop="@id/hlcomment_logo"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hlcomment_logo"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:text="岁月抚伤"
+        android:textColor="#505254"
+        
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/hlcomment_louzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/hlcomment_name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/hlcomment_name"
+        android:src="@drawable/icon_floorhost" />
+
+    <TextView
+        android:id="@+id/hltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hlcomment_name"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hlcomment_logo"
+        android:padding="1dp"
+        android:text="shijian"
+        android:textColor="#A7A9AB"
+        android:textSize="9sp" />
+    
+
+    <TextView
+        android:id="@+id/hlcomment_text"
+        style="@style/TextTheme"
+        android:layout_alignLeft="@+id/hltime"
+        android:layout_below="@id/hltime"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:text="十年之前"
+        android:textSize="14sp" />
+
+</RelativeLayout>

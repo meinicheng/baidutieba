@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_bg"
+        android:orientation="vertical" >
+
+        <com.lshapp.baidutieba.view.ClearEditText
+            android:id="@+id/et_msg_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="5dp"
+            android:background="#EBEDF0"
+            android:drawableLeft="@drawable/icon_head_bar_search"
+            android:drawablePadding="5dp"
+            android:hint="@string/message_search_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp"
+            
+            android:singleLine="true" />
+        
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/et_msg_search"
+            android:layout_gravity="top"
+            android:background="@drawable/user_add_top_bg"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/list_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="11dp"
+                android:paddingRight="18dp"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/v2_gallery_contacts_dialog_background"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/base_actionbar_bg"
+                android:textSize="35.0dip"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.lshapp.baidutieba.view.MyLetterView
+            android:id="@+id/right_letter"
+            android:layout_width="21dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="65dp"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>

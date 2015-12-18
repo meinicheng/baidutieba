@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#262B4D"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button"
+            android:padding="12dp"
+            android:src="@drawable/btn_actionbar_back" />
+
+        <TextView
+            android:id="@+id/nametv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/login_account"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/Register_Edit"
+            android:hint="@string/login_username_hint" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/login_pwd"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/Register_Edit"
+             android:inputType="textPassword"
+            android:hint="@string/login_password_hint" />
+    </LinearLayout>
+
+    <LinearLayout 
+        style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/login_email"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/Register_Edit"
+             android:inputType="textPassword"
+            android:hint="@string/login_email_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/register"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

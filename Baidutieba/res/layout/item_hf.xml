@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="12dp"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/hf_logo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/bg_content_card"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/hf_name"
+        style="@style/TextTheme"
+        android:layout_alignTop="@id/hf_logo"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hf_logo"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:text="岁月抚伤"
+        android:textColor="#505254"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/hf_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hf_name"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hf_logo"
+        android:padding="1dp"
+        android:layout_marginTop="2dp"
+        android:text="第1楼"
+        android:textColor="#A7A9AB"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/hf_text"
+        style="@style/TextTheme"
+        android:layout_alignLeft="@id/hf_logo"
+        android:layout_below="@id/hf_logo"
+        android:layout_marginTop="11dp"
+        android:lineSpacingExtra="4dp"
+        android:text="十年之前"
+        android:textScaleX="1.05"
+        android:textSize="16sp" />
+    <TextView 
+        android:id="@+id/hf_ytcontent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/hf_text"
+        android:textColor="#ABAEB2"
+        android:background="#EBEDF0"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:maxLines="1"
+        android:textSize="14sp"
+        />
+    <TextView 
+        android:id="@+id/hf_tbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hf_ytcontent"
+        android:layout_marginTop="11dp"
+        android:text="九江职业技术学院吧"
+        android:textSize="12sp"
+        android:textColor="#A7A9AB"
+        
+        />
+    
+
+</RelativeLayout>

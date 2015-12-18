@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    android:padding="10dp" 
+    >
+     <ImageView
+        android:id="@+id/hcuser_logo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_content_card"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/hcuser_name"
+        style="@style/TextTheme"
+        android:layout_alignTop="@id/hcuser_logo"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hcuser_logo"
+        android:padding="2dp"
+        android:text="岁月抚伤"
+        android:textColor="#505254"
+        android:textSize="12sp" />
+    <ImageView 
+	    android:id="@+id/hcuser_size"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_alignTop="@id/hcuser_name"
+	     android:src="@drawable/icon_floorhost"
+	     android:layout_toRightOf="@id/hcuser_name"
+	     android:layout_marginTop="2dp"
+	     android:layout_marginLeft="1dp"
+	     android:visibility="gone"
+	    />
+	
+    <TextView
+        android:id="@+id/hcuser_time"
+        style="@style/TextTheme"
+        android:layout_below="@id/hcuser_name"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/hcuser_logo"
+        android:padding="2dp"
+        android:text="2015-09-16 18:54:16"
+        android:textColor="#A7A9AB"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/hctitle_text"
+        style="@style/TextTheme"
+        android:layout_below="@id/hcuser_logo"
+        android:maxLines="2"
+        android:layout_marginTop="8dp"
+        android:text="十年之前"
+        android:lineSpacingExtra="2dp"
+        android:textScaleX="1.05"
+        android:textColor="#0A0A0A"
+        android:textSize="17sp" />
+	
+
+</RelativeLayout>

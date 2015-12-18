@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hude"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:id="@+id/pshouchang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#444963"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_pb_collect_n"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:textSize="12sp"
+            android:paddingLeft="7dp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/phuifu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#444963"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_pb_comment_n"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:paddingLeft="7dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/pdelete"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_pb_del_n"
+        android:layout_marginLeft="5dp"
+        android:background="#444963"
+        />
+
+</LinearLayout>
